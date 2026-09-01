@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 480">
+  <style>
+    text { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', 'SimHei', sans-serif; }
+  </style>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#eef2f7" stroke-width="0.5"/>
+    </pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+
+  <text x="30" y="38" fill="#0f172a" font-size="17" font-weight="700">图 2　能量流向与各环节效率（光伏 → 交流负荷）</text>
+  <text x="30" y="60" fill="#475569" font-size="11">依据：设计指导书 §4.2；每环节效率只计入一次；综合路径效率 η_path ≈ 0.77</text>
+
+  <!-- 直流/交流分区 -->
+  <rect x="20" y="96" width="760" height="180" rx="10" fill="none" stroke="#7c3aed" stroke-width="1.2" stroke-dasharray="8,4"/>
+  <text x="32" y="118" fill="#7c3aed" font-size="10" font-weight="600">直流侧（光伏组串电压 / 48 V 级）</text>
+  <rect x="790" y="96" width="470" height="180" rx="10" fill="none" stroke="#2563eb" stroke-width="1.2" stroke-dasharray="8,4"/>
+  <text x="802" y="118" fill="#2563eb" font-size="10" font-weight="600">交流侧（220 V / 50 Hz）</text>
+
+  <!-- 效率箭头 -->
+  <line x1="180" y1="182" x2="296" y2="182" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="238" y="172" fill="#b45309" font-size="9" text-anchor="middle">直流线缆 η=0.98</text>
+  <line x1="450" y1="182" x2="566" y2="182" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="508" y="172" fill="#b45309" font-size="9" text-anchor="middle">充电 η=0.95</text>
+  <line x1="720" y1="182" x2="836" y2="182" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="778" y="172" fill="#b45309" font-size="9" text-anchor="middle">放电 η=0.95</text>
+  <line x1="990" y1="182" x2="1106" y2="182" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="1048" y="172" fill="#b45309" font-size="9" text-anchor="middle">逆变 η=0.92</text>
+
+  <!-- 组件框 -->
+  <g>
+    <rect x="30" y="150" width="150" height="64" rx="6" fill="#ecfdf5" stroke="#059669" stroke-width="1.5"/>
+    <text x="105" y="176" fill="#0f172a" font-size="12" font-weight="600" text-anchor="middle">光伏阵列</text>
+    <text x="105" y="194" fill="#475569" font-size="9" text-anchor="middle">直流输出</text>
+  </g>
+  <g>
+    <rect x="300" y="150" width="150" height="64" rx="6" fill="#ecfeff" stroke="#0891b2" stroke-width="1.5"/>
+    <text x="375" y="176" fill="#0f172a" font-size="12" font-weight="600" text-anchor="middle">MPPT 控制器</text>
+    <text x="375" y="194" fill="#475569" font-size="9" text-anchor="middle">η_ctrl=0.96</text>
+  </g>
+  <g>
+    <rect x="570" y="150" width="150" height="64" rx="6" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5"/>
+    <text x="645" y="176" fill="#0f172a" font-size="12" font-weight="600" text-anchor="middle">蓄电池</text>
+    <text x="645" y="194" fill="#475569" font-size="9" text-anchor="middle">磷酸铁锂 48 V</text>
+  </g>
+  <g>
+    <rect x="840" y="150" width="150" height="64" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+    <text x="915" y="176" fill="#0f172a" font-size="12" font-weight="600" text-anchor="middle">离网逆变器</text>
+    <text x="915" y="194" fill="#475569" font-size="9" text-anchor="middle">DC→AC</text>
+  </g>
+  <g>
+    <rect x="1110" y="150" width="150" height="64" rx="6" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/>
+    <text x="1185" y="176" fill="#0f172a" font-size="12" font-weight="600" text-anchor="middle">交流负荷</text>
+    <text x="1185" y="194" fill="#475569" font-size="9" text-anchor="middle">E_AC=6.99 kWh/d</text>
+  </g>
+
+  <!-- 综合效率框 -->
+  <rect x="30" y="310" width="1220" height="72" rx="8" fill="#fffbeb" stroke="#d97706" stroke-width="1.2"/>
+  <text x="50" y="338" fill="#0f172a" font-size="12" font-weight="600">综合路径效率（光伏 → 交流负荷，经蓄电池充放）</text>
+  <text x="50" y="362" fill="#475569" font-size="11">η_path = η线缆(0.98) × ηMPPT(0.96) × η充电(0.95) × η放电(0.95) × η逆变(0.92) × η交流线缆(0.99) ≈ 0.77</text>
+
+  <text x="30" y="415" fill="#64748b" font-size="10">注：效率为课程设计典型值；W6 选定逆变器/MPPT/电池型号后，以厂商规格书效率回填（口径不变）。组件温度/失配损失不在此重复计入（指导书 §4.2）。</text>
+</svg>

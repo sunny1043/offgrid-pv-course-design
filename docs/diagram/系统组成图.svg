@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 480">
+  <style>
+    text { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', 'SimHei', sans-serif; }
+  </style>
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#eef2f7" stroke-width="0.5"/>
+    </pattern>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#64748b"/>
+    </marker>
+    <marker id="arrow-dashed" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#7c3aed"/>
+    </marker>
+  </defs>
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+
+  <text x="30" y="38" fill="#0f172a" font-size="17" font-weight="700">图 1　户用离网光伏发电系统组成</text>
+  <text x="30" y="60" fill="#475569" font-size="11">依据：设计指导书 §1.2；三个电气位置（虚线框）的电压/电流特征与保护范围见 §1 表</text>
+
+  <!-- 三个电气位置区域 -->
+  <rect x="20" y="96" width="330" height="172" rx="10" fill="none" stroke="#059669" stroke-width="1.2" stroke-dasharray="8,4"/>
+  <text x="32" y="118" fill="#059669" font-size="10" font-weight="600">光伏输入侧（组串电压）</text>
+  <rect x="360" y="96" width="330" height="172" rx="10" fill="none" stroke="#7c3aed" stroke-width="1.2" stroke-dasharray="8,4"/>
+  <text x="372" y="118" fill="#7c3aed" font-size="10" font-weight="600">48 V 级直流侧（45~58 V）</text>
+  <rect x="700" y="96" width="560" height="172" rx="10" fill="none" stroke="#2563eb" stroke-width="1.2" stroke-dasharray="8,4"/>
+  <text x="712" y="118" fill="#2563eb" font-size="10" font-weight="600">220 V 交流侧（220 V / 50 Hz 单相）</text>
+
+  <!-- 连接箭头 -->
+  <line x1="170" y1="182" x2="196" y2="182" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="340" y1="182" x2="366" y2="182" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="510" y1="182" x2="536" y2="182" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="680" y1="182" x2="706" y2="182" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="850" y1="182" x2="876" y2="182" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="1020" y1="182" x2="1046" y2="182" stroke="#64748b" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <!-- 蓄电池充放电双向（返回虚线） -->
+  <line x1="680" y1="226" x2="514" y2="226" stroke="#7c3aed" stroke-width="1.2" stroke-dasharray="5,3" marker-end="url(#arrow-dashed)"/>
+  <text x="596" y="218" fill="#7c3aed" font-size="9">充放电双向</text>
+
+  <!-- 组件框 -->
+  <g>
+    <rect x="30" y="150" width="140" height="64" rx="6" fill="#ecfdf5" stroke="#059669" stroke-width="1.5"/>
+    <text x="100" y="176" fill="#0f172a" font-size="12" font-weight="600" text-anchor="middle">光伏方阵</text>
+    <text x="100" y="194" fill="#475569" font-size="9" text-anchor="middle">组件串并联</text>
+  </g>
+  <g>
+    <rect x="200" y="150" width="140" height="64" rx="6" fill="#fff1f2" stroke="#e11d48" stroke-width="1.5"/>
+    <text x="270" y="176" fill="#0f172a" font-size="12" font-weight="600" text-anchor="middle">直流保护</text>
+    <text x="270" y="194" fill="#475569" font-size="9" text-anchor="middle">熔断器/隔离/SPD</text>
+  </g>
+  <g>
+    <rect x="370" y="150" width="140" height="64" rx="6" fill="#ecfeff" stroke="#0891b2" stroke-width="1.5"/>
+    <text x="440" y="176" fill="#0f172a" font-size="12" font-weight="600" text-anchor="middle">MPPT 控制器</text>
+    <text x="440" y="194" fill="#475569" font-size="9" text-anchor="middle">降压充电</text>
+  </g>
+  <g>
+    <rect x="540" y="150" width="140" height="64" rx="6" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5"/>
+    <text x="610" y="176" fill="#0f172a" font-size="12" font-weight="600" text-anchor="middle">蓄电池及 BMS</text>
+    <text x="610" y="194" fill="#475569" font-size="9" text-anchor="middle">48 V 磷酸铁锂</text>
+  </g>
+  <g>
+    <rect x="710" y="150" width="140" height="64" rx="6" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+    <text x="780" y="176" fill="#0f172a" font-size="12" font-weight="600" text-anchor="middle">离网逆变器</text>
+    <text x="780" y="194" fill="#475569" font-size="9" text-anchor="middle">DC48V→AC220V</text>
+  </g>
+  <g>
+    <rect x="880" y="150" width="140" height="64" rx="6" fill="#fffbeb" stroke="#d97706" stroke-width="1.5"/>
+    <text x="950" y="176" fill="#0f172a" font-size="12" font-weight="600" text-anchor="middle">交流配电</text>
+    <text x="950" y="194" fill="#475569" font-size="9" text-anchor="middle">MCB/RCD/SPD</text>
+  </g>
+  <g>
+    <rect x="1050" y="150" width="140" height="64" rx="6" fill="#f8fafc" stroke="#475569" stroke-width="1.5"/>
+    <text x="1120" y="176" fill="#0f172a" font-size="12" font-weight="600" text-anchor="middle">负荷</text>
+    <text x="1120" y="194" fill="#475569" font-size="9" text-anchor="middle">220 V 单相</text>
+  </g>
+
+  <!-- 图例 -->
+  <rect x="30" y="300" width="14" height="14" rx="3" fill="#ecfdf5" stroke="#059669"/>
+  <text x="52" y="312" fill="#475569" font-size="10">光伏输入侧（组串电压）</text>
+  <rect x="220" y="300" width="14" height="14" rx="3" fill="#f5f3ff" stroke="#7c3aed"/>
+  <text x="242" y="312" fill="#475569" font-size="10">48 V 级直流侧</text>
+  <rect x="390" y="300" width="14" height="14" rx="3" fill="#eff6ff" stroke="#2563eb"/>
+  <text x="412" y="312" fill="#475569" font-size="10">220 V 交流侧</text>
+  <rect x="560" y="300" width="14" height="14" rx="3" fill="#fff1f2" stroke="#e11d48"/>
+  <text x="582" y="312" fill="#475569" font-size="10">保护器件</text>
+
+  <text x="30" y="350" fill="#64748b" font-size="10">注：蓄电池为充放电双向储能环节（白天 MPPT 充电、夜间放电经逆变器供电）；同一功率在不同电压下电流不同，不得跨侧复用电流参数。</text>
+  <text x="30" y="372" fill="#64748b" font-size="10">图用于课程设计报告（图 1）；正式图纸见 T1-01 系统电气主接线图（W9）。</text>
+</svg>
