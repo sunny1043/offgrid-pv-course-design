@@ -1,193 +1,192 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297" font-family="Microsoft YaHei, SimHei, sans-serif">
-<rect x="5" y="5" width="410" height="287" fill="none" stroke="black" stroke-width="0.8"/>
-<rect x="25" y="10" width="385" height="277" fill="none" stroke="black" stroke-width="0.5"/>
-<rect x="230" y="247" width="180" height="40" fill="white" stroke="black" stroke-width="0.5"/>
-<line x1="280" y1="247" x2="280" y2="287" stroke="black" stroke-width="0.4"/>
-<line x1="320" y1="247" x2="320" y2="287" stroke="black" stroke-width="0.4"/>
-<line x1="370" y1="247" x2="370" y2="287" stroke="black" stroke-width="0.4"/>
-<line x1="230" y1="263" x2="410" y2="263" stroke="black" stroke-width="0.4"/>
-<line x1="230" y1="273" x2="410" y2="273" stroke="black" stroke-width="0.4"/>
-<text x="234" y="255" font-size="3.2" text-anchor="start">图名</text>
-<text x="234" y="267" font-size="3.2" text-anchor="start">图号</text>
-<text x="234" y="279" font-size="3.2" text-anchor="start">比例</text>
-<text x="284" y="255" font-size="3.2" text-anchor="start">系统电气主接线图</text>
-<text x="284" y="267" font-size="3.2" text-anchor="start">T1-01</text>
-<text x="284" y="279" font-size="3.2" text-anchor="start">无比例</text>
-<text x="324" y="255" font-size="3.2" text-anchor="start">姓名</text>
-<text x="324" y="267" font-size="3.2" text-anchor="start">学号</text>
-<text x="324" y="279" font-size="3.2" text-anchor="start">版本</text>
-<text x="334" y="255" font-size="3.2" text-anchor="start">____</text>
-<text x="334" y="267" font-size="3.2" text-anchor="start">____</text>
-<text x="334" y="279" font-size="3.2" text-anchor="start">A</text>
-<text x="374" y="255" font-size="3.2" text-anchor="start">日期</text>
-<text x="374" y="267" font-size="3.0" text-anchor="start">2026-09-03</text>
-<text x="374" y="279" font-size="3.2" text-anchor="start">单位</text>
-<text x="384" y="267" font-size="3.0" text-anchor="start">哈工大（深圳）</text>
-<rect x="25" y="30" width="14" height="7" fill="white" stroke="black" stroke-width="0.5"/>
-<line x1="27" y1="36.5" x2="37" y2="30.5" stroke="black" stroke-width="0.5"/>
-<polygon points="34.5,30.5 37,30.5 37,33" fill="black"/>
-<rect x="40" y="30" width="14" height="7" fill="white" stroke="black" stroke-width="0.5"/>
-<line x1="42" y1="36.5" x2="52" y2="30.5" stroke="black" stroke-width="0.5"/>
-<polygon points="49.5,30.5 52,30.5 52,33" fill="black"/>
-<rect x="55" y="30" width="14" height="7" fill="white" stroke="black" stroke-width="0.5"/>
-<line x1="57" y1="36.5" x2="67" y2="30.5" stroke="black" stroke-width="0.5"/>
-<polygon points="64.5,30.5 67,30.5 67,33" fill="black"/>
-<rect x="70" y="30" width="14" height="7" fill="white" stroke="black" stroke-width="0.5"/>
-<line x1="72" y1="36.5" x2="82" y2="30.5" stroke="black" stroke-width="0.5"/>
-<polygon points="79.5,30.5 82,30.5 82,33" fill="black"/>
-<rect x="85" y="30" width="14" height="7" fill="white" stroke="black" stroke-width="0.5"/>
-<line x1="87" y1="36.5" x2="97" y2="30.5" stroke="black" stroke-width="0.5"/>
-<polygon points="94.5,30.5 97,30.5 97,33" fill="black"/>
-<text x="25" y="27" font-size="3.0" text-anchor="start">光伏组件 隆基 LR7-72HGD-600M ×5（5 串 1 并）</text>
-<text x="25" y="42" font-size="2.8" text-anchor="start">Voc,cold=286.1V  Isc=14.49A  Imp=13.6A</text>
-<line x1="99" y1="33.5" x2="100" y2="33.5" stroke="black" stroke-width="0.5"/>
-<line x1="100" y1="33.5" x2="105" y2="33.5" stroke="black" stroke-width="0.5"/>
-<rect x="104" y="31.5" width="6" height="4" fill="white" stroke="black" stroke-width="0.5"/>
-<line x1="107" y1="35.5" x2="107" y2="40.5" stroke="black" stroke-width="0.5"/>
-<line x1="107" y1="31.5" x2="107" y2="28.5" stroke="black" stroke-width="0.5"/>
-<text x="107" y="27.5" font-size="2.4" text-anchor="middle">F1 25A gPV</text>
-<line x1="112" y1="33.5" x2="116" y2="33.5" stroke="black" stroke-width="0.5"/>
-<line x1="118" y1="40.5" x2="118" y2="33.5" stroke="black" stroke-width="0.5"/>
-<line x1="118" y1="33.5" x2="123" y2="29.5" stroke="black" stroke-width="0.6"/>
-<circle cx="118" cy="33.5" r="1.2" fill="white" stroke="black" stroke-width="0.5"/>
-<text x="125" y="31.5" font-size="2.4" text-anchor="start">QS1 直流隔离</text>
-<line x1="126" y1="33.5" x2="130" y2="33.5" stroke="black" stroke-width="0.5"/>
-<rect x="130" y="30.5" width="6" height="6" fill="white" stroke="black" stroke-width="0.5"/>
-<line x1="133" y1="36.5" x2="133" y2="40.5" stroke="black" stroke-width="0.5"/>
-<polygon points="131.4,40.5 134.6,40.5 133,43.0" fill="black"/>
-<line x1="129" y1="43.0" x2="137" y2="43.0" stroke="black" stroke-width="0.5"/>
-<line x1="130.4" y1="45.5" x2="135.6" y2="45.5" stroke="black" stroke-width="0.5"/>
-<line x1="131.8" y1="48.0" x2="134.2" y2="48.0" stroke="black" stroke-width="0.5"/>
-<text x="133" y="27.5" font-size="2.3" text-anchor="middle">SPD1 直流 TypeII</text>
-<line x1="111" y1="33.5" x2="147" y2="33.5" stroke="black" stroke-width="0.5"/>
-<text x="125" y="40" font-size="2.5" text-anchor="start">PV1-F 4mm²  L=15m</text>
-<rect x="155" y="20" width="60" height="26" fill="white" stroke="black" stroke-width="0.5"/>
-<text x="185" y="25" font-size="3.2" text-anchor="middle" font-weight="bold">Growatt SPF 5000 ES</text>
-<text x="185" y="31" font-size="2.8" text-anchor="middle">MPPT+离网逆变一体机</text>
-<text x="185" y="37" font-size="2.5" text-anchor="middle">额定5kW / 浪涌10kVA / η93%</text>
-<text x="185" y="43" font-size="2.5" text-anchor="middle">MPPT 120~430V 输入≤450V</text>
-<line x1="147" y1="33.5" x2="155" y2="33.5" stroke="black" stroke-width="0.5"/>
-<rect x="30" y="175" width="14" height="16" fill="white" stroke="black" stroke-width="0.5"/>
-<text x="37" y="183" font-size="3.0" text-anchor="middle" font-weight="bold">B1</text>
-<text x="37" y="189" font-size="2.4" text-anchor="middle">BMS</text>
-<rect x="34" y="170" width="6" height="4" fill="white" stroke="black" stroke-width="0.5"/>
-<line x1="37" y1="174" x2="37" y2="179" stroke="black" stroke-width="0.5"/>
-<line x1="37" y1="170" x2="37" y2="167" stroke="black" stroke-width="0.5"/>
-<text x="37" y="168" font-size="2.2" text-anchor="middle">F2 100A</text>
-<rect x="50" y="175" width="14" height="16" fill="white" stroke="black" stroke-width="0.5"/>
-<text x="57" y="183" font-size="3.0" text-anchor="middle" font-weight="bold">B2</text>
-<text x="57" y="189" font-size="2.4" text-anchor="middle">BMS</text>
-<rect x="54" y="170" width="6" height="4" fill="white" stroke="black" stroke-width="0.5"/>
-<line x1="57" y1="174" x2="57" y2="179" stroke="black" stroke-width="0.5"/>
-<line x1="57" y1="170" x2="57" y2="167" stroke="black" stroke-width="0.5"/>
-<text x="57" y="168" font-size="2.2" text-anchor="middle">F3 100A</text>
-<rect x="70" y="175" width="14" height="16" fill="white" stroke="black" stroke-width="0.5"/>
-<text x="77" y="183" font-size="3.0" text-anchor="middle" font-weight="bold">B3</text>
-<text x="77" y="189" font-size="2.4" text-anchor="middle">BMS</text>
-<rect x="74" y="170" width="6" height="4" fill="white" stroke="black" stroke-width="0.5"/>
-<line x1="77" y1="174" x2="77" y2="179" stroke="black" stroke-width="0.5"/>
-<line x1="77" y1="170" x2="77" y2="167" stroke="black" stroke-width="0.5"/>
-<text x="77" y="168" font-size="2.2" text-anchor="middle">F4 100A</text>
-<rect x="90" y="175" width="14" height="16" fill="white" stroke="black" stroke-width="0.5"/>
-<text x="97" y="183" font-size="3.0" text-anchor="middle" font-weight="bold">B4</text>
-<text x="97" y="189" font-size="2.4" text-anchor="middle">BMS</text>
-<rect x="94" y="170" width="6" height="4" fill="white" stroke="black" stroke-width="0.5"/>
-<line x1="97" y1="174" x2="97" y2="179" stroke="black" stroke-width="0.5"/>
-<line x1="97" y1="170" x2="97" y2="167" stroke="black" stroke-width="0.5"/>
-<text x="97" y="168" font-size="2.2" text-anchor="middle">F5 100A</text>
-<rect x="110" y="175" width="14" height="16" fill="white" stroke="black" stroke-width="0.5"/>
-<text x="117" y="183" font-size="3.0" text-anchor="middle" font-weight="bold">B5</text>
-<text x="117" y="189" font-size="2.4" text-anchor="middle">BMS</text>
-<rect x="114" y="170" width="6" height="4" fill="white" stroke="black" stroke-width="0.5"/>
-<line x1="117" y1="174" x2="117" y2="179" stroke="black" stroke-width="0.5"/>
-<line x1="117" y1="170" x2="117" y2="167" stroke="black" stroke-width="0.5"/>
-<text x="117" y="168" font-size="2.2" text-anchor="middle">F6 100A</text>
-<text x="30" y="200" font-size="2.8" text-anchor="start">蓄电池 5×Benhoo BNP-5120BM（48V 级 / 100Ah / 5.12kWh，19"机架式）</text>
-<line x1="29" y1="166" x2="125" y2="166" stroke="black" stroke-width="0.5"/>
-<text x="29" y="162" font-size="2.4" text-anchor="start">电池正母线（等长等截面）</text>
-<text x="29" y="156" font-size="2.4" text-anchor="start">支路熔断器 5×100A gPV</text>
-<line x1="125" y1="166" x2="133" y2="166" stroke="black" stroke-width="0.5"/>
-<line x1="133" y1="166" x2="133" y2="156" stroke="black" stroke-width="0.5"/>
-<line x1="133" y1="156" x2="133" y2="153" stroke="black" stroke-width="0.5"/>
-<line x1="133" y1="156" x2="137" y2="156" stroke="black" stroke-width="0.6"/>
-<line x1="133" y1="153" x2="130" y2="153" stroke="black" stroke-width="0.6"/>
-<circle cx="133" cy="155" r="1.2" fill="white" stroke="black" stroke-width="0.5"/>
-<text x="133" y="150" font-size="2.4" text-anchor="middle">QF1 160A DC MCB</text>
-<line x1="133" y1="153" x2="133" y2="46" stroke="black" stroke-width="0.5"/>
-<text x="136" y="105" font-size="2.5" text-anchor="start">RV 70mm² L=2m 45V/119.5A</text>
-<line x1="215" y1="33.5" x2="221" y2="33.5" stroke="black" stroke-width="0.5"/>
-<line x1="222" y1="33.5" x2="226" y2="33.5" stroke="black" stroke-width="0.5"/>
-<line x1="228" y1="40.5" x2="228" y2="35.5" stroke="black" stroke-width="0.5"/>
-<line x1="228" y1="31.5" x2="228" y2="28.5" stroke="black" stroke-width="0.5"/>
-<line x1="228" y1="35.5" x2="232" y2="35.5" stroke="black" stroke-width="0.6"/>
-<line x1="228" y1="31.5" x2="225" y2="31.5" stroke="black" stroke-width="0.6"/>
-<circle cx="228" cy="33.5" r="1.2" fill="white" stroke="black" stroke-width="0.5"/>
-<text x="229" y="27.5" font-size="2.4" text-anchor="middle">QF2 32A C型</text>
-<line x1="229" y1="33.5" x2="237" y2="33.5" stroke="black" stroke-width="0.5"/>
-<rect x="237" y="29.5" width="6" height="8" fill="white" stroke="black" stroke-width="0.5"/>
-<line x1="240" y1="37.5" x2="240" y2="41" stroke="black" stroke-width="0.5"/>
-<line x1="240" y1="29.5" x2="240" y2="27" stroke="black" stroke-width="0.5"/>
-<text x="240" y="26" font-size="2.3" text-anchor="middle">RCD 30mA</text>
-<line x1="240" y1="33.5" x2="246" y2="33.5" stroke="black" stroke-width="0.5"/>
-<line x1="245" y1="33.5" x2="249" y2="33.5" stroke="black" stroke-width="0.5"/>
-<rect x="249" y="30.5" width="6" height="6" fill="white" stroke="black" stroke-width="0.5"/>
-<line x1="252" y1="36.5" x2="252" y2="40.5" stroke="black" stroke-width="0.5"/>
-<polygon points="250.4,40.5 253.6,40.5 252,43.0" fill="black"/>
-<line x1="248" y1="43.0" x2="256" y2="43.0" stroke="black" stroke-width="0.5"/>
-<line x1="249.4" y1="45.5" x2="254.6" y2="45.5" stroke="black" stroke-width="0.5"/>
-<line x1="250.8" y1="48.0" x2="253.2" y2="48.0" stroke="black" stroke-width="0.5"/>
-<text x="252" y="27.5" font-size="2.3" text-anchor="middle">SPD2 交流 TypeII</text>
-<line x1="246" y1="33.5" x2="252" y2="33.5" stroke="black" stroke-width="0.5"/>
-<text x="227" y="28" font-size="2.4" text-anchor="start">RVV 3×6mm² L=5m</text>
-<rect x="256" y="24" width="26" height="20" fill="white" stroke="black" stroke-width="0.5"/>
-<text x="269" y="32" font-size="2.8" text-anchor="middle" font-weight="bold">交流配电箱</text>
-<text x="269" y="39" font-size="3.0" text-anchor="middle">DB</text>
-<line x1="282" y1="38.9" x2="286" y2="38.9" stroke="black" stroke-width="0.5"/>
-<circle cx="288" cy="38.9" r="2.0" fill="white" stroke="black" stroke-width="0.5"/>
-<text x="291" y="39.4" font-size="2.3" text-anchor="start">照明 10A BV 2.5mm²</text>
-<line x1="282" y1="36.2" x2="286" y2="36.2" stroke="black" stroke-width="0.5"/>
-<circle cx="288" cy="36.2" r="2.0" fill="white" stroke="black" stroke-width="0.5"/>
-<text x="291" y="36.7" font-size="2.3" text-anchor="start">厨房 20A BV 4mm²</text>
-<line x1="282" y1="33.5" x2="286" y2="33.5" stroke="black" stroke-width="0.5"/>
-<circle cx="288" cy="33.5" r="2.0" fill="white" stroke="black" stroke-width="0.5"/>
-<text x="291" y="34.0" font-size="2.3" text-anchor="start">采暖 10A BV 2.5mm²</text>
-<line x1="282" y1="30.799999999999997" x2="286" y2="30.799999999999997" stroke="black" stroke-width="0.5"/>
-<circle cx="288" cy="30.799999999999997" r="2.0" fill="white" stroke="black" stroke-width="0.5"/>
-<text x="291" y="31.299999999999997" font-size="2.3" text-anchor="start">插座 16A BV 2.5mm²</text>
-<line x1="269" y1="46" x2="269" y2="50" stroke="black" stroke-width="0.5"/>
-<line x1="265" y1="52" x2="273" y2="52" stroke="black" stroke-width="0.5"/>
-<line x1="266.4" y1="54.5" x2="271.6" y2="54.5" stroke="black" stroke-width="0.5"/>
-<line x1="266.4" y1="57.0" x2="271.6" y2="57.0" stroke="black" stroke-width="0.5"/>
-<text x="269" y="59" font-size="2.3" text-anchor="middle">PE 保护接地/等电位（W7）</text>
-<text x="30" y="222" font-size="3.0" text-anchor="start" font-weight="bold">图例：</text>
-<rect x="30" y="225" width="14" height="7" fill="white" stroke="black" stroke-width="0.5"/>
-<line x1="32" y1="230" x2="42" y2="227" stroke="black" stroke-width="0.5"/>
-<polygon points="39,227 42,227 42,230" fill="black"/>
-<text x="46" y="230" font-size="2.6" text-anchor="start">光伏组件</text>
-<line x1="76" y1="225" x2="76" y2="231" stroke="black" stroke-width="0.5"/>
-<line x1="80" y1="224" x2="80" y2="232" stroke="black" stroke-width="0.8"/>
-<text x="82" y="230" font-size="2.6" text-anchor="start">蓄电池</text>
-<rect x="108" y="223" width="6" height="4" fill="white" stroke="black" stroke-width="0.5"/>
-<line x1="111" y1="227" x2="111" y2="231" stroke="black" stroke-width="0.5"/>
-<line x1="111" y1="223" x2="111" y2="221" stroke="black" stroke-width="0.5"/>
-<text x="116" y="230" font-size="2.6" text-anchor="start">熔断器</text>
-<line x1="140" y1="231" x2="140" y2="227" stroke="black" stroke-width="0.5"/>
-<line x1="140" y1="223" x2="140" y2="221" stroke="black" stroke-width="0.5"/>
-<line x1="140" y1="227" x2="144" y2="227" stroke="black" stroke-width="0.6"/>
-<line x1="140" y1="223" x2="137" y2="223" stroke="black" stroke-width="0.6"/>
-<circle cx="140" cy="227" r="1.2" fill="white" stroke="black" stroke-width="0.5"/>
-<text x="148" y="230" font-size="2.6" text-anchor="start">断路器/MCB</text>
-<line x1="182" y1="231" x2="182" y2="225" stroke="black" stroke-width="0.5"/>
-<line x1="182" y1="225" x2="187" y2="221" stroke="black" stroke-width="0.6"/>
-<circle cx="182" cy="221" r="1.2" fill="white" stroke="black" stroke-width="0.5"/>
-<text x="190" y="230" font-size="2.6" text-anchor="start">隔离开关</text>
-<rect x="219" y="222" width="6" height="6" fill="white" stroke="black" stroke-width="0.5"/>
-<line x1="222" y1="228" x2="222" y2="232" stroke="black" stroke-width="0.5"/>
-<polygon points="220.4,232 223.6,232 222,234.5" fill="black"/>
-<text x="230" y="230" font-size="2.6" text-anchor="start">SPD</text>
-<line x1="254" y1="227" x2="254" y2="231" stroke="black" stroke-width="0.5"/>
-<line x1="250" y1="232" x2="258" y2="232" stroke="black" stroke-width="0.5"/>
-<line x1="251.4" y1="234.5" x2="256.6" y2="234.5" stroke="black" stroke-width="0.5"/>
-<line x1="251.4" y1="237.0" x2="256.6" y2="237.0" stroke="black" stroke-width="0.5"/>
-<text x="262" y="230" font-size="2.6" text-anchor="start">接地</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="420" height="297" viewBox="0 0 420 297">
+<style>text{font-family:FangSong,SimSun,serif;} .t{font-family:SimHei,FangSong,sans-serif;} .wb{stroke:black;stroke-width:0.9;fill:none;} .wm{stroke:black;stroke-width:0.6;fill:none;} .wf{stroke:black;stroke-width:0.35;fill:none;} .fillw{fill:white;stroke:black;} .dc{stroke-dasharray:6,3;stroke:black;fill:none;} .pe{stroke-dasharray:4,2;stroke:black;fill:none;} text{fill:black;}</style>
+
+<rect x="0" y="0" width="420" height="297" fill="white" stroke="black" stroke-width="0.35"/>
+<rect x="10" y="10" width="400" height="277" fill="none" stroke="black" stroke-width="0.9"/>
+<text x="20" y="26" class="t" font-size="7" font-weight="bold">户用离网光伏发电系统——系统电气主接线图</text>
+<text x="20" y="36" font-size="4.5">拉萨/兰州/哈尔滨差异化设计（拉萨） · A3</text>
+<rect x="270" y="249" width="140" height="38" fill="white" stroke="black" stroke-width="0.6"/>
+<line x1="270" y1="249" x2="270" y2="287" stroke="black" stroke-width="0.35"/>
+<line x1="305" y1="249" x2="305" y2="287" stroke="black" stroke-width="0.35"/>
+<line x1="350" y1="249" x2="350" y2="287" stroke="black" stroke-width="0.35"/>
+<line x1="380" y1="249" x2="380" y2="287" stroke="black" stroke-width="0.35"/>
+<line x1="270" y1="249" x2="410" y2="249" stroke="black" stroke-width="0.35"/>
+<line x1="270" y1="259" x2="410" y2="259" stroke="black" stroke-width="0.35"/>
+<line x1="270" y1="268" x2="410" y2="268" stroke="black" stroke-width="0.35"/>
+<line x1="270" y1="277" x2="410" y2="277" stroke="black" stroke-width="0.35"/>
+<text x="287.5" y="255.2" font-size="3.2" text-anchor="middle" class="">哈尔滨工业大学</text>
+<text x="327.5" y="255.2" font-size="3.4" text-anchor="middle" class="t">系统电气主接线图</text>
+<text x="365.0" y="255.2" font-size="3" text-anchor="middle" class="">图号</text>
+<text x="395.0" y="255.2" font-size="3.4" text-anchor="middle" class="">T1-01</text>
+<text x="287.5" y="264.7" font-size="3.2" text-anchor="middle" class="">设计：＿＿</text>
+<text x="327.5" y="264.7" font-size="3.2" text-anchor="middle" class="">制图：＿＿</text>
+<text x="365.0" y="264.7" font-size="3.2" text-anchor="middle" class="">审核：＿＿</text>
+<text x="395.0" y="264.7" font-size="3" text-anchor="middle" class="">日期 2026-09-03</text>
+<text x="287.5" y="273.7" font-size="3.2" text-anchor="middle" class="">学号：＿＿</text>
+<text x="327.5" y="273.7" font-size="3.2" text-anchor="middle" class="">班级：＿＿</text>
+<text x="365.0" y="273.7" font-size="3.2" text-anchor="middle" class="">版本 A</text>
+<text x="395.0" y="273.7" font-size="3.2" text-anchor="middle" class="">页次 1/1</text>
+<text x="287.5" y="283.2" font-size="3" text-anchor="middle" class="">比例</text>
+<text x="327.5" y="283.2" font-size="3.4" text-anchor="middle" class="">无比例</text>
+<text x="365.0" y="283.2" font-size="3" text-anchor="middle" class="">单位：mm</text>
+<text x="395.0" y="283.2" font-size="3" text-anchor="middle" class=""></text>
+<rect x="59.0" y="41.0" width="22" height="14" class="wm"/>
+<rect x="66.5" y="44.5" width="7" height="7" class="wf"/>
+<line x1="66.5" y1="44.5" x2="73.5" y2="51.5" class="wf"/>
+<line x1="66.5" y1="47.5" x2="69.5" y2="48.5" class="wf"/>
+<line x1="66" y1="37.0" x2="68" y2="39.5" class="wf"/>
+<line x1="70" y1="35.0" x2="70" y2="39.5" class="wf"/>
+<line x1="74" y1="37.0" x2="72" y2="39.5" class="wf"/>
+<text x="70" y="63" font-size="3.5" text-anchor="middle">光伏组件 LR7-72HGD-600M×5</text>
+<text x="70" y="68" font-size="3" text-anchor="middle">5串×1并 3.00kWp</text>
+<line x1="70" y1="55" x2="70" y2="72" class="dc"/>
+<rect x="64.0" y="75.5" width="12" height="5" class="wf"/>
+<line x1="64.0" y1="78" x2="76.0" y2="78" class="wf"/>
+<text x="79" y="79" font-size="3" text-anchor="start">F1 25A gPV</text>
+<line x1="70" y1="83" x2="70" y2="91" class="dc"/>
+<line x1="62.0" y1="97" x2="78.0" y2="97" class="wf"/>
+<line x1="67.5" y1="94.5" x2="72.5" y2="99.5" class="wf"/>
+<text x="79" y="98" font-size="3" text-anchor="start">QS1 直流隔离</text>
+<line x1="70" y1="105" x2="70" y2="111" class="dc"/>
+<polygon points="67,114 73,117 67,120" fill="none" stroke="black" stroke-width="0.35"/>
+<polygon points="73,114 67,117 73,120" fill="none" stroke="black" stroke-width="0.35"/>
+<line x1="76" y1="125" x2="76" y2="129" stroke="black" stroke-width="0.5"/>
+<line x1="69" y1="129" x2="83" y2="129" stroke="black" stroke-width="0.5"/>
+<line x1="71.5" y1="132.5" x2="80.5" y2="132.5" stroke="black" stroke-width="0.5"/>
+<line x1="74" y1="136" x2="78" y2="136" stroke="black" stroke-width="0.5"/>
+<text x="63" y="123" font-size="3" text-anchor="end">SPD1 直流</text>
+<text x="80" y="132" font-size="3" text-anchor="start">SPD U_cpv≥345V</text>
+<line x1="70" y1="117" x2="70" y2="140" class="dc"/>
+<line x1="204.66666666666666" y1="41.0" x2="204.66666666666666" y2="55.0" stroke="black" stroke-width="0.7"/>
+<line x1="207.16666666666666" y1="44.0" x2="207.16666666666666" y2="52.0" stroke="black" stroke-width="0.35"/>
+<line x1="210.0" y1="41.0" x2="210.0" y2="55.0" stroke="black" stroke-width="0.7"/>
+<line x1="212.5" y1="44.0" x2="212.5" y2="52.0" stroke="black" stroke-width="0.35"/>
+<line x1="215.33333333333331" y1="41.0" x2="215.33333333333331" y2="55.0" stroke="black" stroke-width="0.7"/>
+<line x1="217.83333333333331" y1="44.0" x2="217.83333333333331" y2="52.0" stroke="black" stroke-width="0.35"/>
+<text x="210" y="63" font-size="3.5" text-anchor="middle">蓄电池组 5×BNP-5120BM</text>
+<text x="210" y="68" font-size="3" text-anchor="middle">B1-B5 · 48V/100Ah/5.12kWh</text>
+<line x1="210" y1="55" x2="210" y2="72" class="dc"/>
+<rect x="204.0" y="75.5" width="12" height="5" class="wf"/>
+<line x1="204.0" y1="78" x2="216.0" y2="78" class="wf"/>
+<text x="203" y="79" font-size="3" text-anchor="end">F2-F6 5×100A gPV</text>
+<line x1="210" y1="83" x2="210" y2="91" class="dc"/>
+<line x1="202.0" y1="97" x2="218.0" y2="97" class="wf"/>
+<line x1="207.5" y1="94.5" x2="212.5" y2="99.5" class="wf"/>
+<line x1="207.5" y1="99.5" x2="212.5" y2="94.5" class="wf"/>
+<text x="219" y="98" font-size="3" text-anchor="start">QF1 160A DC MCB</text>
+<line x1="210" y1="105" x2="210" y2="111" class="dc"/>
+<polygon points="207,114 213,117 207,120" fill="none" stroke="black" stroke-width="0.35"/>
+<polygon points="213,114 207,117 213,120" fill="none" stroke="black" stroke-width="0.35"/>
+<line x1="216" y1="125" x2="216" y2="129" stroke="black" stroke-width="0.5"/>
+<line x1="209" y1="129" x2="223" y2="129" stroke="black" stroke-width="0.5"/>
+<line x1="211.5" y1="132.5" x2="220.5" y2="132.5" stroke="black" stroke-width="0.5"/>
+<line x1="214" y1="136" x2="218" y2="136" stroke="black" stroke-width="0.5"/>
+<line x1="210" y1="117" x2="210" y2="140" class="dc"/>
+<line x1="70" y1="140" x2="210" y2="140" class="dc"/>
+<circle cx="70" cy="140" r="1.3" fill="black"/>
+<circle cx="210" cy="140" r="1.3" fill="black"/>
+<text x="140" y="134" font-size="3" text-anchor="middle">DC 母线（PV 与电池支路）</text>
+<text x="222" y="123" font-size="3" text-anchor="start">电池→逆变器 RV 70mm² L≤2m</text>
+<line x1="140" y1="140" x2="140" y2="155" class="dc"/>
+<rect x="112.0" y="155.0" width="56" height="26" class="wm"/>
+<text x="140" y="167" font-size="5" text-anchor="middle" class="t" font-weight="bold">INV</text>
+<text x="140" y="174" font-size="3.5" text-anchor="middle">~</text>
+<text x="140" y="187" font-size="3.2" text-anchor="middle">Growatt SPF 5000 ES</text>
+<text x="140" y="191" font-size="3" text-anchor="middle">5kW/10kVA/η93% · MPPT 120~430V</text>
+<line x1="140" y1="181" x2="140" y2="193" class="wf"/>
+<circle cx="140" cy="200" r="5" fill="white" stroke="black" stroke-width="0.6"/>
+<circle cx="140" cy="200" r="2" fill="none" stroke="black" stroke-width="0.35"/>
+<line x1="135" y1="200" x2="131" y2="200" class="wf"/>
+<line x1="145" y1="200" x2="149" y2="200" class="wf"/>
+<text x="148" y="199" font-size="3" text-anchor="start">QF2 MCB 32A C 型 + RCD 30mA</text>
+<line x1="140" y1="206" x2="140" y2="213" class="wf"/>
+<polygon points="137,216 143,219 137,222" fill="none" stroke="black" stroke-width="0.35"/>
+<polygon points="143,216 137,219 143,222" fill="none" stroke="black" stroke-width="0.35"/>
+<line x1="146" y1="227" x2="146" y2="231" stroke="black" stroke-width="0.5"/>
+<line x1="139" y1="231" x2="153" y2="231" stroke="black" stroke-width="0.5"/>
+<line x1="141.5" y1="234.5" x2="150.5" y2="234.5" stroke="black" stroke-width="0.5"/>
+<line x1="144" y1="238" x2="148" y2="238" stroke="black" stroke-width="0.5"/>
+<text x="150" y="233" font-size="3" text-anchor="start">SPD2 交流 220V</text>
+<line x1="140" y1="225" x2="140" y2="236" class="wf"/>
+<rect x="118.0" y="236.0" width="44" height="16" class="wm"/>
+<text x="140" y="246" font-size="5" text-anchor="middle" class="t" font-weight="bold">配电箱 DB</text>
+<line x1="118" y1="258" x2="182" y2="258" class="wf"/>
+<line x1="140" y1="258" x2="60" y2="258" class="wf"/>
+<line x1="60" y1="258" x2="60" y2="263" class="wf"/>
+<rect x="48.0" y="265.5" width="24" height="9" class="wf"/>
+<text x="60" y="271.5" font-size="3.2" text-anchor="middle">照明</text>
+<text x="60" y="277" font-size="2.6" text-anchor="middle">10A/BV2.5</text>
+<line x1="140" y1="258" x2="102" y2="258" class="wf"/>
+<line x1="102" y1="258" x2="102" y2="263" class="wf"/>
+<rect x="90.0" y="265.5" width="24" height="9" class="wf"/>
+<text x="102" y="271.5" font-size="3.2" text-anchor="middle">厨房</text>
+<text x="102" y="277" font-size="2.6" text-anchor="middle">20A/BV4</text>
+<line x1="140" y1="258" x2="144" y2="258" class="wf"/>
+<line x1="144" y1="258" x2="144" y2="263" class="wf"/>
+<rect x="132.0" y="265.5" width="24" height="9" class="wf"/>
+<text x="144" y="271.5" font-size="3.2" text-anchor="middle">采暖插座</text>
+<text x="144" y="277" font-size="2.6" text-anchor="middle">10A/BV2.5</text>
+<line x1="140" y1="258" x2="186" y2="258" class="wf"/>
+<line x1="186" y1="258" x2="186" y2="263" class="wf"/>
+<rect x="174.0" y="265.5" width="24" height="9" class="wf"/>
+<text x="186" y="271.5" font-size="3.2" text-anchor="middle">插座</text>
+<text x="186" y="277" font-size="2.6" text-anchor="middle">16A/BV2.5</text>
+<line x1="20" y1="150" x2="40" y2="150" class="pe"/>
+<line x1="20" y1="146" x2="20" y2="150" stroke="black" stroke-width="0.5"/>
+<line x1="13" y1="150" x2="27" y2="150" stroke="black" stroke-width="0.5"/>
+<line x1="15.5" y1="153.5" x2="24.5" y2="153.5" stroke="black" stroke-width="0.5"/>
+<line x1="18" y1="157" x2="22" y2="157" stroke="black" stroke-width="0.5"/>
+<text x="26" y="130" font-size="3" text-anchor="start">PE 保护接地 / 等电位（W7）</text>
+<text x="14" y="140" font-size="2.8" text-anchor="middle">PE</text>
+<text x="14" y="144" font-size="2.8" text-anchor="middle">≥6mm²</text>
+<text x="288" y="46" class="t" font-size="4.5" font-weight="bold">图例</text>
+<rect x="285.0" y="47.0" width="22" height="14" class="wm"/>
+<rect x="292.5" y="50.5" width="7" height="7" class="wf"/>
+<line x1="292.5" y1="50.5" x2="299.5" y2="57.5" class="wf"/>
+<line x1="292.5" y1="53.5" x2="295.5" y2="54.5" class="wf"/>
+<line x1="292" y1="43.0" x2="294" y2="45.5" class="wf"/>
+<line x1="296" y1="41.0" x2="296" y2="45.5" class="wf"/>
+<line x1="300" y1="43.0" x2="298" y2="45.5" class="wf"/>
+<text x="312" y="55.5" font-size="3">光伏组件</text>
+<line x1="291.3333333333333" y1="65.0" x2="291.3333333333333" y2="75.0" stroke="black" stroke-width="0.7"/>
+<line x1="293.8333333333333" y1="68.0" x2="293.8333333333333" y2="72.0" stroke="black" stroke-width="0.35"/>
+<line x1="296.0" y1="65.0" x2="296.0" y2="75.0" stroke="black" stroke-width="0.7"/>
+<line x1="298.5" y1="68.0" x2="298.5" y2="72.0" stroke="black" stroke-width="0.35"/>
+<line x1="300.66666666666663" y1="65.0" x2="300.66666666666663" y2="75.0" stroke="black" stroke-width="0.7"/>
+<line x1="303.16666666666663" y1="68.0" x2="303.16666666666663" y2="72.0" stroke="black" stroke-width="0.35"/>
+<text x="312" y="71.5" font-size="3">蓄电池</text>
+<rect x="290.0" y="82.5" width="12" height="5" class="wf"/>
+<line x1="290.0" y1="85" x2="302.0" y2="85" class="wf"/>
+<text x="312" y="86.5" font-size="3">熔断器 FU</text>
+<line x1="288.0" y1="99" x2="304.0" y2="99" class="wf"/>
+<line x1="293.5" y1="96.5" x2="298.5" y2="101.5" class="wf"/>
+<line x1="293.5" y1="101.5" x2="298.5" y2="96.5" class="wf"/>
+<text x="312" y="100.5" font-size="3">断路器 QF</text>
+<line x1="288.0" y1="113" x2="304.0" y2="113" class="wf"/>
+<line x1="293.5" y1="110.5" x2="298.5" y2="115.5" class="wf"/>
+<text x="312" y="114.5" font-size="3">隔离开关 QS</text>
+<polygon points="293,124 299,127 293,130" fill="none" stroke="black" stroke-width="0.35"/>
+<polygon points="299,124 293,127 299,130" fill="none" stroke="black" stroke-width="0.35"/>
+<line x1="296" y1="132" x2="296" y2="136" stroke="black" stroke-width="0.5"/>
+<line x1="289" y1="136" x2="303" y2="136" stroke="black" stroke-width="0.5"/>
+<line x1="291.5" y1="139.5" x2="300.5" y2="139.5" stroke="black" stroke-width="0.5"/>
+<line x1="294" y1="143" x2="298" y2="143" stroke="black" stroke-width="0.5"/>
+<text x="312" y="128.5" font-size="3">SPD 防雷器</text>
+<line x1="296" y1="141" x2="296" y2="145" stroke="black" stroke-width="0.5"/>
+<line x1="289" y1="145" x2="303" y2="145" stroke="black" stroke-width="0.5"/>
+<line x1="291.5" y1="148.5" x2="300.5" y2="148.5" stroke="black" stroke-width="0.5"/>
+<line x1="294" y1="152" x2="298" y2="152" stroke="black" stroke-width="0.5"/>
+<text x="312" y="146.5" font-size="3">接地</text>
+<line x1="290" y1="159" x2="302" y2="159" class="dc"/>
+<text x="312" y="160.5" font-size="3">直流（虚线）</text>
+<line x1="290" y1="170" x2="302" y2="170" class="wf"/>
+<text x="312" y="171.5" font-size="3">交流（实线）</text>
+<line x1="290" y1="181" x2="302" y2="181" class="pe"/>
+<text x="312" y="182.5" font-size="3">PE（短划线）</text>
+<text x="288" y="189" font-size="4" class="t" font-weight="bold">说明：</text>
+<text x="288" y="195" font-size="3.2">1. 单线图，保护配置见 W7；</text>
+<text x="288" y="199.5" font-size="3.2">2. 蓄电池→逆变器按 45V 校核压降（红线）；</text>
+<text x="288" y="204.0" font-size="3.2">3. 光伏支路 PV1-F 4mm²；交流 RVV 3×6mm²；</text>
+<text x="288" y="208.5" font-size="3.2">4. 采暖插座为新增回路（10A/2.5mm²）；</text>
+<text x="288" y="213.0" font-size="3.2">5. 接地电阻≤4Ω，等电位联结。</text>
 </svg>
