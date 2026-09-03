@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="420mm" height="297mm" viewBox="0 0 420 297" font-family="Microsoft YaHei, SimHei, sans-serif">
+<rect x="5" y="5" width="410" height="287" fill="none" stroke="black" stroke-width="0.8"/>
+<rect x="25" y="10" width="385" height="277" fill="none" stroke="black" stroke-width="0.5"/>
+<rect x="230" y="247" width="180" height="40" fill="white" stroke="black" stroke-width="0.5"/>
+<line x1="280" y1="247" x2="280" y2="287" stroke="black" stroke-width="0.4"/>
+<line x1="320" y1="247" x2="320" y2="287" stroke="black" stroke-width="0.4"/>
+<line x1="370" y1="247" x2="370" y2="287" stroke="black" stroke-width="0.4"/>
+<line x1="230" y1="263" x2="410" y2="263" stroke="black" stroke-width="0.4"/>
+<line x1="230" y1="273" x2="410" y2="273" stroke="black" stroke-width="0.4"/>
+<text x="234" y="255" font-size="3.2" text-anchor="start">图名</text>
+<text x="234" y="267" font-size="3.2" text-anchor="start">图号</text>
+<text x="234" y="279" font-size="3.2" text-anchor="start">比例</text>
+<text x="284" y="255" font-size="3.2" text-anchor="start">光伏阵列及支架布置图</text>
+<text x="284" y="267" font-size="3.2" text-anchor="start">T1-02</text>
+<text x="284" y="279" font-size="3.2" text-anchor="start">1:100</text>
+<text x="324" y="255" font-size="3.2" text-anchor="start">姓名</text>
+<text x="324" y="267" font-size="3.2" text-anchor="start">学号</text>
+<text x="324" y="279" font-size="3.2" text-anchor="start">版本</text>
+<text x="334" y="255" font-size="3.2" text-anchor="start">____</text>
+<text x="334" y="267" font-size="3.2" text-anchor="start">____</text>
+<text x="334" y="279" font-size="3.2" text-anchor="start">A</text>
+<text x="374" y="255" font-size="3.2" text-anchor="start">日期</text>
+<text x="374" y="267" font-size="3.0" text-anchor="start">2026-09-03</text>
+<text x="374" y="279" font-size="3.2" text-anchor="start">单位</text>
+<text x="384" y="267" font-size="3.0" text-anchor="start">哈工大（深圳）</text>
+<rect x="40" y="40" width="300" height="160" fill="white" stroke="black" stroke-width="0.5"/>
+<text x="190.0" y="36" font-size="3.2" text-anchor="middle">屋面平面（俯视）  可用安装区约 12m×5m（南向）</text>
+<circle cx="328" cy="50" r="6" fill="white" stroke="black" stroke-width="0.5"/>
+<line x1="328" y1="55" x2="328" y2="45" stroke="black" stroke-width="0.6"/>
+<polygon points="328,45 329.1,46.90525588832577 326.9,46.90525588832577" fill="black"/>
+<text x="328" y="60" font-size="3.0" text-anchor="middle" font-weight="bold">N</text>
+<rect x="70" y="110" width="238.20000000000002" height="26.75" fill="#e8e8e8" stroke="black" stroke-width="0.5"/>
+<rect x="70.8" y="110.8" width="57.95" height="25.15" fill="white" stroke="black" stroke-width="0.5"/>
+<text x="99.775" y="124.375" font-size="3.4" text-anchor="middle" font-weight="bold">1</text>
+<rect x="130.35000000000002" y="110.8" width="57.95" height="25.15" fill="white" stroke="black" stroke-width="0.5"/>
+<text x="159.32500000000002" y="124.375" font-size="3.4" text-anchor="middle" font-weight="bold">2</text>
+<rect x="189.90000000000003" y="110.8" width="57.95" height="25.15" fill="white" stroke="black" stroke-width="0.5"/>
+<text x="218.87500000000003" y="124.375" font-size="3.4" text-anchor="middle" font-weight="bold">3</text>
+<rect x="249.45000000000002" y="110.8" width="57.95" height="25.15" fill="white" stroke="black" stroke-width="0.5"/>
+<text x="278.425" y="124.375" font-size="3.4" text-anchor="middle" font-weight="bold">4</text>
+<text x="189.10000000000002" y="106" font-size="2.8" text-anchor="middle">阵列 4 串×1 并（4 块横排，倾角 20° 正南）</text>
+<text x="189.10000000000002" y="144.75" font-size="2.8" text-anchor="middle">东西 9.53 m</text>
+<line x1="70" y1="141.75" x2="308.20000000000005" y2="141.75" stroke="black" stroke-width="0.4"/>
+<polygon points="308.20000000000005,141.75 306.2947441116743,142.85 306.2947441116743,140.65" fill="black"/>
+<text x="64" y="123.375" font-size="2.6" text-anchor="middle">1.07m</text>
+<line x1="66" y1="136.75" x2="66" y2="110" stroke="black" stroke-width="0.4"/>
+<polygon points="66,110 67.1,111.90525588832577 64.9,111.90525588832577" fill="black"/>
+<text x="74" y="106" font-size="2.6" text-anchor="start">南侧维护通道 ≥1.0m</text>
+<line x1="70" y1="106" x2="95" y2="106" stroke="black" stroke-width="0.4"/>
+<polygon points="95,106 93.09474411167423,107.1 93.09474411167423,104.9" fill="black"/>
+<text x="318.20000000000005" y="123.375" font-size="2.6" text-anchor="start">距侧边 ≥0.5m</text>
+<text x="318.20000000000005" y="120" font-size="2.6" text-anchor="start">距北侧 ≥0.6m</text>
+<text x="318.20000000000005" y="130" font-size="2.6" text-anchor="start">距南檐口 ≥1.0m</text>
+<path d="M 189.10000000000002 136.75 L 189.10000000000002 192 L 310 192" fill="none" stroke="black" stroke-width="0.4" stroke-dasharray="2,1.2"/>
+<text x="190.0" y="198" font-size="2.6" text-anchor="middle">直流线缆路径（穿屋面→设备间，PV1-F 4mm² L≈15m）</text>
+<text x="40" y="222" font-size="3.2" text-anchor="start" font-weight="bold">阵列剖面（南-北，A-A）：</text>
+<line x1="40" y1="255" x2="200" y2="255" stroke="black" stroke-width="0.5"/>
+<line x1="60" y1="255" x2="88.2" y2="244.8" stroke="black" stroke-width="0.6"/>
+<line x1="88.2" y1="244.8" x2="160" y2="244.8" stroke="black" stroke-width="0.6"/>
+<text x="100" y="247" font-size="2.6" text-anchor="middle">组件面 倾角20°</text>
+<text x="44" y="252" font-size="2.4" text-anchor="start">前沿 0.5m</text>
+<text x="162" y="247" font-size="2.4" text-anchor="start">后沿 0.89m</text>
+<line x1="60" y1="255" x2="60" y2="247" stroke="black" stroke-width="0.5"/>
+<line x1="160" y1="255" x2="160" y2="247" stroke="black" stroke-width="0.5"/>
+<rect x="58" y="251" width="4" height="4" fill="white" stroke="black" stroke-width="0.5"/>
+<rect x="158" y="251" width="4" height="4" fill="white" stroke="black" stroke-width="0.5"/>
+<text x="58" y="261" font-size="2.4" text-anchor="start">立柱+锚固</text>
+<text x="158" y="261" font-size="2.4" text-anchor="start">立柱+锚固</text>
+<text x="44" y="267" font-size="2.6" text-anchor="start">排间节距（扩排）：D=L·cos20°+L·sin20°/tan26.5°=1.84m（≈1.63×L）</text>
+<text x="44" y="273" font-size="2.6" text-anchor="start">导轨：铝 6063-T5，σ=24.3MPa≤85MPa，f=0.88mm≤L/200（W8 校核）</text>
+</svg>
