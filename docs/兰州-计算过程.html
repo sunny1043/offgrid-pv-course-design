@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>兰州 D1~D5 计算过程（详细代入版）</title>
+<style>
+:root{--main:#1f4e79;--sub:#2e75b6;}
+*{box-sizing:border-box;}
+body{font-family:"Songti SC","STSong","SimSun",serif;color:#222;line-height:1.8;max-width:940px;margin:0 auto;padding:28px 32px 90px;background:#f7f9fc;}
+h1{color:var(--main);font-size:26px;border-bottom:3px solid var(--main);padding-bottom:10px;font-family:"PingFang SC","Heiti SC",sans-serif;}
+h2{color:var(--sub);font-size:20px;margin-top:34px;border-left:5px solid var(--sub);padding-left:10px;font-family:"PingFang SC","Heiti SC",sans-serif;}
+p{margin:10px 0;}
+.eq{background:#f4f7fc;border:1px solid #dbe4f0;border-left:5px solid var(--main);padding:12px 16px;text-align:center;font-size:15px;border-radius:6px;margin:12px 0;}
+.src{background:#fff8ef;border-left:4px solid #b06d00;padding:6px 12px;font-size:13px;color:#5a3d00;margin:6px 0 18px;}
+table{border-collapse:collapse;width:100%;margin:12px 0;font-size:14px;background:#fff;}
+th{background:#d9e2f3;color:var(--main);}
+th,td{border:1px solid #b7c9e2;padding:6px 9px;text-align:left;vertical-align:middle;}
+tr:nth-child(even){background:#f5f8fd;}
+a{color:#0563c1;}
+.meta{color:#888;font-size:13px;}
+</style>
+</head>
+<body>
+
+<h1>兰州 D1~D5 计算过程（详细代入版 · 每一处计算完整写出）</h1>
+<p class="meta">数据抓取 2026-09-06（NASA POWER 实测 / 兰州市气象记录 / 官方产品页）。口径说明：基础负荷精确值 3.405 kWh/d，冬季 E_AC 精确值 7.605 kWh/d（取两位 7.61）；蓄电池与敏感性用精确值代入，故结果与表中一致。</p>
+
+<h2>0. 设计输入与数据来源</h2>
+<table>
+<tr><th>输入</th><th>取值（精确值）</th><th>来源</th></tr>
+<tr><td>冬季 E_AC（区间 7.5~8.0）</td><td>7.605 kWh/d（≈7.61）</td><td>兰州专属负荷（§2.1 官方链接）</td></tr>
+<tr><td>基础负荷 / 采暖</td><td>3.405 / 4.200 kWh/d</td><td>§2.1 设备表求和</td></tr>
+<tr><td>太阳能逐月 G、D、T</td><td>G≈1660 kWh/m²·yr</td><td>NASA POWER 2019-2023 实测</td></tr>
+<tr><td>极端气温</td><td>39.8 / -21.7 ℃</td><td>兰州市气象记录</td></tr>
+<tr><td>η_inv/η_dis/DOD/K_R/K_T/N_A</td><td>0.93/0.95/0.90/1.10/1.00/2 d</td><td>Growatt 官方表/LFP 典型/Benhoo 规格/Benhoo 寿命/Benhoo 工作温度/任务书</td></tr>
+</table>
+
+<h2>1. 日用电量（指导书 §2.2）</h2>
+<div class="eq">E_i = P_i × t_i × k_i（kWh/d，P:kW，t:h）；E_AC = Σ E_i</div>
+<p><b>① 逐台代入：</b></p>
+<table>
+<tr><th>设备</th><th>代入</th><th>结果(kWh/d)</th></tr>
+<tr><td>冰箱</td><td>能效标识日耗电（不乘时间）</td><td>0.540</td></tr>
+<tr><td>电热毯</td><td>0.15 × 8 × 1.0</td><td>1.200</td></tr>
+<tr><td>对流式电暖器</td><td>1.2 × 5 × 0.5</td><td>3.000</td></tr>
+<tr><td>照明 9W×8</td><td>0.009 × 8 × 4.5</td><td>0.324</td></tr>
+<tr><td>路由器</td><td>0.006 × 24</td><td>0.144</td></tr>
+<tr><td>电视</td><td>0.12 × 3.5</td><td>0.420</td></tr>
+<tr><td>笔记本</td><td>0.04 × 5</td><td>0.200</td></tr>
+<tr><td>手机快充×2</td><td>0.01 × 2 × 3</td><td>0.060</td></tr>
+<tr><td>电饭煲</td><td>0.86 × 0.6</td><td>0.516</td></tr>
+<tr><td>电热水壶</td><td>1.5 × 0.15</td><td>0.225</td></tr>
+<tr><td>油烟机</td><td>0.2 × 0.5</td><td>0.100</td></tr>
+<tr><td>微波炉</td><td>1.15 × 0.12</td><td>0.138</td></tr>
+<tr><td>电磁炉(周末)</td><td>2.1 × (0.5/7)</td><td>0.150</td></tr>
+<tr><td>洗衣机</td><td>0.2×0.5 + 0.5×0.2 + 0.1</td><td>0.300</td></tr>
+<tr><td>待机</td><td>0.012 × 24</td><td>0.288</td></tr>
+</table>
+<p><b>② 分类求和：</b>制冷 0.540；采暖 4.200；照明 0.324；通信 0.144+0.420+0.200+0.060=0.824；炊事 0.516+0.225+0.100+0.138+0.150=1.129；生活辅助 0.300+0.288=0.588。</p>
+<p><b>③ 基础负荷</b> = 0.540+0.324+0.824+1.129+0.588 = <b>3.405 ≈ 3.41 kWh/d</b>；<b>采暖</b> = 1.200+3.000 = <b>4.200</b>。</p>
+<p><b>④ 冬季 E_AC</b> = 3.405+4.200 = <b>7.605 ≈ 7.61 kWh/d</b>（过渡 3.405+1.200=4.605≈4.61；夏季 3.405+1.014=4.419≈4.42；温和 3.405≈3.41）。</p>
+<p class="src"><b>数据来源：</b>各设备功率/日耗电见 §2.1 清单表（海尔官网、美的商城、小米官网、苏宁、太平洋、中关村官方链接）。</p>
+
+<h2>2. 最大同时功率（指导书 §2.3）</h2>
+<div class="eq">P_j = Σ(该时段同时运行 P_i)；P_max = max_j P_j</div>
+<p><b>19:00-19:15 烧水时段完整代入：</b>电暖器 1.2 + 电热毯 0.15 + 电热水壶 1.5 + 电饭煲 0.86 + 油烟机 0.20 + 照明 0.072 + 电视 0.12 + 冰箱 0.12 + 路由器 0.006 = 4.228 ≈ <b>4.2 kW</b>。</p>
+<p><b>周末校核（电磁炉午餐、电暖器未开）：</b>2.1 + 0.86 + 0.20 + 0.072 + 0.12 + 0.12 + 0.006 + 0.04 = 3.518 ≈ 3.5 kW &lt; 4.2 → P_max = <b>4.2 kW</b>。</p>
+<p class="src"><b>数据来源：</b>设备功率见 §2.1（官方链接）；错峰在 24 h 运行表体现（指导书 §2.3 要求）。</p>
+
+<h2>3. 短时冲击功率（指导书 §2.4）</h2>
+<div class="eq">P_start,m = k_s,m × P_m,rated；P_short = P_start + 同时运行其他负荷</div>
+<p><b>冰箱压缩机启动：</b>k_s ≈ 5 × 0.12 kW = 0.60 kW（持续约 0.1~0.5 s）。</p>
+<p><b>P_short</b> = 4.228 + 0.60 = <b>4.83 ≈ 4.8 kW</b>。</p>
+<p class="src"><b>数据来源：</b>k_s、t_start 按厂家资料（海尔冰箱/洗衣机-苏宁/美的空调商城链接在 §2.4 表）；变频空调软启动不套定频倍数。</p>
+
+<h2>4. 峰值日照时数（指导书 §3.1）</h2>
+<div class="eq">H = G_tilt / 1(kW/m²)；数值上 h/d = kWh/m²·d</div>
+<p><b>水平面 12 月</b>：G=2.82 kWh/m²·d → <b>2.82 h/d</b>。</p>
+<p><b>倾斜 35° 面 12 月</b>：Liu-Jordan 换算 G_tilt = B·R_b + D·(1+cos35°)/2 + G·ρ·(1−cos35°)/2，代入 NASA 实测 G=2.82、D=0.96（B=1.86）、ρ=0.2、R_b 按时角积分 → <b>4.81 kWh/m²·d → 4.81 h/d</b>。</p>
+<p class="src"><b>数据来源：</b>NASA POWER 逐月 G/D（2026-09-06 实测）；PVGIS 交叉验证 ±10% 量级（文档 §3.1）。</p>
+
+<h2>5. 最不利设计月（指导书 §3.2）</h2>
+<div class="eq">R_m = E_AC,m / G_m</div>
+<p><b>逐月代入（G 为 NASA 实测）：</b>1 月 7.605/3.00=2.54；2 月 7.605/3.74=2.03；3 月 7.605/4.83=1.58；4 月 4.605/5.51=0.84；5 月 3.405/6.00=0.57；6 月 4.419/5.90=0.75；7 月 4.419/6.20=0.71；8 月 4.419/5.19=0.85；9 月 3.405/4.62=0.74；10 月 4.605/3.51=1.31；11 月 7.605/3.22=2.36；12 月 7.605/2.82=<b>2.70</b>（最大）→ 最不利设计月 = <b>12 月</b>。</p>
+<p class="src"><b>数据来源：</b>E_AC 逐月（§1）；G 逐月（NASA 实测）。</p>
+
+<h2>6. 组件温度（指导书 §3.3，NOCT）</h2>
+<div class="eq">T_cell = T_amb + (NOCT−20)/800 × G（NOCT=45 ℃、G=1000 W/m²）</div>
+<p><b>温升项</b>：(45−20)/800 × 1000 = 25/800×1000 = 0.03125×1000 = <b>31.25 ℃</b>。</p>
+<p><b>极端高温</b>：T_cell = 39.8 + 31.25 = <b>71.05 ≈ 71.1 ℃</b>；<b>7 月常态</b>：20.7 + 31.25 = <b>51.95 ≈ 51.9 ℃</b>。</p>
+<p class="src"><b>数据来源：</b>T_amb 为兰州市气象记录（39.8 ℃）与 NASA 月均温（20.7 ℃）；NOCT 为组件典型参数。</p>
+
+<h2>7. 综合路径效率（指导书 §4.2）</h2>
+<div class="eq">η_path = η_dc·η_MPPT·η_ch·η_dis·η_inv·η_ac</div>
+<p><b>逐项相乘：</b>0.98×0.96=0.9408；×0.95=0.89376；×0.95=0.849072；×0.93=0.789637；×0.99=<b>0.78174 ≈ 0.782</b>。</p>
+<p class="src"><b>数据来源：</b>η_inv=0.93（Growatt 官方数据表）；η_dis=0.95（LFP 往返效率典型值）；线缆/控制器/充电效率为设计取值（文档 §4.2）。</p>
+
+<h2>8. 蓄电池最低标称能量（指导书 §5.2）</h2>
+<div class="eq">E_bat,min = E_AC·N_A·K_R / (DOD·η_dis·η_inv·K_T)</div>
+<p><b>分子</b>：7.605 × 2 × 1.10 = 15.210 × 1.10 = <b>16.731</b>。</p>
+<p><b>分母</b>：0.90 × 0.95 × 0.93 × 1.00 = 0.855 × 0.93 = <b>0.79515</b>。</p>
+<p><b>E_bat,min</b> = 16.731 / 0.79515 = <b>21.04 kWh</b>。</p>
+<p class="src"><b>数据来源：</b>E_AC=7.605（§1）；N_A=2（任务书）；K_R=1.10（BNP-5120BM 循环 6000+ 次、70% EOL 预留衰减）；DOD=0.90（Benhoo 放电下限 44.8 V）；η_dis=0.95（LFP 典型）；η_inv=0.93（Growatt）；K_T=1.00（模块充电 0~50 ℃、保温≥10 ℃）。</p>
+
+<h2>9. 安时换算（指导书 §5.2）</h2>
+<div class="eq">C_bat,min = 1000 × E_bat,min / V_nom</div>
+<p><b>代入：</b>1000 × 21.04 / 51.2 = 21040 / 51.2 = <b>410.9 ≈ 411 Ah</b>。</p>
+<p class="src"><b>数据来源：</b>V_nom=51.2 V（Benhoo 官方规格）。</p>
+
+<h2>10. 模块能量与并联数（指导书 §5.3）</h2>
+<div class="eq">E_mod = V·Ah/1000；N_P,E = ceil(E_bat,min / E_mod)</div>
+<p><b>E_mod</b> = 51.2 × 100 / 1000 = 5120/1000 = <b>5.12 kWh</b>。</p>
+<p><b>N_P,E</b> = ceil(21.04 / 5.12) = ceil(4.109) = <b>5 台</b>；实际 = 5 × 5.12 = <b>25.60 kWh</b>；比值 = 25.60/21.04 = <b>1.217 ≈ 1.22</b>（≤1.25 ✓）。</p>
+<p><b>方案 B（200 Ah）</b>：E_mod=10.24 kWh；2 台 = 2×10.24 = 20.48 kWh &lt; 21.04（不足）；3 台 = 3×10.24 = 30.72 kWh，30.72/21.04 = 1.46 &gt; 1.25（超限）→ 不成立。</p>
+<p class="src"><b>数据来源：</b>模块 Benhoo BNP-5120BM（官方产品页链接在文档 §5.3）；1.25× 上限（指导书 §5.5）。</p>
+
+<h2>11. 充放电电流（指导书 §5.4）</h2>
+<div class="eq">I_dis = P_inv,r/(V_bat,min·η_inv)；短时用 P_short；I_chg = min(P_PV·η_MPPT/V_bat,chg, I_ctrl)</div>
+<p><b>分母</b>：45 × 0.93 = <b>41.85</b>。</p>
+<p><b>连续放电</b> I_dis = 5000 / 41.85 = <b>119.5 A</b>。</p>
+<p><b>短时放电</b> I_dis,sur = 4800 / 41.85 = <b>114.7 A</b>（4800 W 即 P_short=4.8 kW）。</p>
+<p><b>最大充电</b> I_chg = min(2400 × 0.96 / 54.4, 80) = min(2304/54.4, 80) = min(42.35, 80) = <b>42.4 A</b>。</p>
+<p><b>并联数量</b>：N_P,dis = ceil(119.5/100) = 2；N_P,chg = ceil(42.4/50) = 1；N_P = max(5, 2, 1) = <b>5</b>。</p>
+<p><b>校核</b>：连续 119.5 ≤ 5×100=500（4.2×）；短时 114.7 ≤ 500；充电 42.4 ≤ 5×50=250（5.9×）→ 全部通过。</p>
+<p class="src"><b>数据来源：</b>P_inv,r=5000 W、η_inv=0.93、I_ctrl=80 A（Growatt 官方数据表）；P_short=4800 W（§3）；V_bat,min=45 V、V_bat,chg=54.4 V（逆变器/模块规格）；P_PV=2400 W、η_MPPT=0.96（附录 A）。</p>
+
+<h2>12. 3 d 敏感性分析（指导书 §5.5）</h2>
+<div class="eq">E_3d = E_AC·3·K_R / (DOD·η_dis·η_inv·K_T) ≈ 1.5 × 2 d 基准</div>
+<p><b>分子</b>：7.605 × 3 × 1.10 = 22.815 × 1.10 = 25.0965；<b>分母</b> 0.79515。</p>
+<p><b>E_3d</b> = 25.0965 / 0.79515 = <b>31.56 kWh</b>；N_P,E = ceil(31.56/5.12) = ceil(6.164) = <b>7 台</b>（35.84 kWh），较方案 A 多 2 台；31.56/21.04 = <b>1.50 倍</b>（理论 3/2）。</p>
+<p><b>保守 DOD=0.80</b>：16.731 / (0.80×0.95×0.93) = 16.731 / 0.7068 = <b>23.67 kWh → 5 台</b>。</p>
+<p><b>低温 K_T=0.70（不保温）</b>：16.731 / (0.90×0.95×0.93×0.70) = 16.731 / 0.5566 = <b>30.06 kWh → 6 台</b>（较基准 +43%）。</p>
+<p class="src"><b>数据来源：</b>系数同 §8（查得来源）；3 d 仅观察成本变化、不作最终配置（任务书明确）。</p>
+
+<h2>13. 附录A 光伏（供 §11 电流，指导书 §6）</h2>
+<div class="eq">P_PV,min = E_AC·K_R/(H_tilt·η_path)</div>
+<p><b>代入：</b>7.605×1.10 / (4.81×0.782) = 8.3655 / 3.7614 = <b>2.22 kWp</b>；选 N_S=4（600 W×4 = 2.40 kWp）。</p>
+<div class="eq">V_oc,cold = V_oc·(1+β_Voc·(T_min−25))；V_mp,hot = V_mp·(1+β_Vmp·(T_cell−25))</div>
+<p><b>V_oc,cold</b> = 52.22×(1+(−0.0023)×(−21.7−25)) = 52.22×(1+0.0023×46.7) = 52.22×1.10741 = <b>57.83 V</b>；<b>V_mp,hot</b> = 44.12×(1−0.0028×46.1) = 44.12×0.87092 = <b>38.43 V</b>；<b>V_mp,cold</b> = 44.12×1.13076 = <b>49.89 V</b>。</p>
+<p><b>N_S,min</b> = ceil(120/38.43) = 4；<b>N_S,max</b> = floor(500/57.83) = 8 → 可行域 [4,8]；选 N_S=4 → 组串 V_oc,cold = 4×57.83 = 231.3 V ≤ 500 V ✓。</p>
+<p><b>12 月供能</b> E_PV = 2.4 × 4.81 × 0.782 = 9.03 kWh/d；供能比 = 9.03 / 7.605 = <b>1.19</b>（1 月 1.17）。</p>
+<p class="src"><b>数据来源：</b>组件隆基 LR7-72HGD-600M（V_oc=52.22 V 等，官方数据表）；控制器上限 500 V（Growatt 官方数据表）；T_min=-21.7 ℃、T_cell=71.1 ℃（§6）。</p>
+
+<h2>14. 表3 汇总（每格来源）</h2>
+<table>
+<tr><th>项目</th><th>计算或选定结果</th><th>产品允许值</th><th>结论</th><th>来源/说明</th></tr>
+<tr><td>最低标称能量</td><td>21.04 kWh</td><td>—</td><td>—</td><td>§8；无单一允许值→“—”</td></tr>
+<tr><td>模块型号/单模块能量</td><td>BNP-5120BM / 5.12 kWh</td><td>—</td><td>—</td><td>§10 选型</td></tr>
+<tr><td>串联/并联数量</td><td>N_S=1；N_P=5</td><td>1；并联远低于上限</td><td>OK</td><td>§10/§11；完整模块不串联</td></tr>
+<tr><td>实际标称能量</td><td>25.60 kWh</td><td>≤1.25×21.04=26.30</td><td>OK（1.22×）</td><td>§10/§5.5</td></tr>
+<tr><td>连续/短时/充电电流</td><td>119.5 / 114.7 / 42.4 A</td><td>500 / 500 / 250 A</td><td>OK</td><td>§11</td></tr>
+<tr><td>BMS/并联限制</td><td>智能 BMS（RS485/CAN），并联 5 台</td><td>远低于上限</td><td>OK</td><td>厂家规格</td></tr>
+<tr><td>设备间保温</td><td>不低于 10 ℃</td><td>—</td><td>设计决策</td><td>-21.7 ℃ 低温充电必需→“—”合理</td></tr>
+</table>
+
+<hr>
+<p class="meta">每一处计算均已完整代入数值并标注数据来源；配套：执行版 docx、公式汇总 md/html、计算书 PDF、可复现脚本 docs/计算-兰州-D1-D5-真实数据.py。</p>
+
+</body>
+</html>

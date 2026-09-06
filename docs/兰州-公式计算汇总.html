@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>兰州 D1~D5 公式计算汇总（指导书 §1~§5 + 附录A 光伏）</title>
+<style>
+:root{--main:#1f4e79;--sub:#2e75b6;}
+*{box-sizing:border-box;}
+body{font-family:"Songti SC","STSong","SimSun",serif;color:#222;line-height:1.75;max-width:880px;margin:0 auto;padding:28px 32px 80px;background:#f7f9fc;}
+h1{color:var(--main);font-size:26px;border-bottom:3px solid var(--main);padding-bottom:10px;font-family:"PingFang SC","Heiti SC","Microsoft YaHei",sans-serif;}
+h2{color:var(--sub);font-size:20px;margin-top:34px;border-left:5px solid var(--sub);padding-left:10px;font-family:"PingFang SC","Heiti SC",sans-serif;}
+p{margin:10px 0;}
+blockquote{background:#e8f6f3;border-left:4px solid #00695c;margin:12px 0;padding:8px 14px;color:#333;}
+strong{color:#111;}
+code{background:#eef2f8;border-radius:4px;padding:1px 5px;font-family:Menlo,Consolas,monospace;font-size:0.92em;color:#0b5394;}
+pre{background:#f4f7fc;border:1px solid #dbe4f0;border-left:5px solid var(--main);padding:12px 16px;overflow-x:auto;border-radius:6px;}
+table{border-collapse:collapse;width:100%;margin:14px 0;font-size:14px;background:#fff;}
+th{background:#d9e2f3;color:var(--main);font-weight:700;}
+th,td{border:1px solid #b7c9e2;padding:7px 10px;text-align:left;vertical-align:middle;}
+tr:nth-child(even){background:#f5f8fd;}
+a{color:#0563c1;text-decoration:none;word-break:break-all;}
+a:hover{text-decoration:underline;}
+hr{border:none;border-top:1px dashed #ccc;margin:26px 0;}
+.meta{color:#888;font-size:13px;margin-bottom:18px;}
+</style>
+</head>
+<body>
+<h1 id="兰州-d1d5-公式计算汇总指导书-15--附录a-光伏">兰州 D1~D5
+公式计算汇总（指导书 §1~§5 + 附录A 光伏）</h1>
+<blockquote>
+<p>数据：NASA POWER 2026-09-06 实测（2019-2023
+五年平均，36.05N/103.83E）；极端气温 39.8 ℃（2010-07-28）/ -21.7
+℃（1964-01-27）；负荷为兰州专属并经官网核验。全部输入与来源见《兰州-D1-D5-按指导书执行版.docx》。
+参数声明：全部数据按实际查得来源计算（NASA POWER
+实测、兰州市气象记录、官方产品页、Growatt/Benhoo
+官方数据表），未采用指导书 §5.2
+示例数值；如个别工程常值与示例相同属正常取值。</p>
+</blockquote>
+<h2 id="0-设计输入含来源">0 设计输入（含来源）</h2>
+<ul>
+<li>冬季 E_AC = <strong>7.61 kWh/d</strong>（区间 7.5~8.0，学号末位
+4/5）；过渡 4.61、夏季 4.42、温和 3.41</li>
+<li>基础负荷 3.41 = 0.54(冰箱) + 0.32(照明) + 0.82(通信) + 1.14(炊事) +
+0.59(生活辅助)；采暖 4.20 = 1.20 + 3.00</li>
+<li>气候：NASA POWER（<a
+href="<a href="https://power.larc.nasa.gov"" target="_blank" rel="noopener">https://power.larc.nasa.gov"</a>><a href="https://power.larc.nasa.gov" target="_blank" rel="noopener">https://power.larc.nasa.gov</a></a>
+）；PVGIS 交叉验证（<a
+href="<a href="https://re.jrc.ec.europa.eu/pvg_tools/en/"" target="_blank" rel="noopener">https://re.jrc.ec.europa.eu/pvg_tools/en/"</a>><a href="https://re.jrc.ec.europa.eu/pvg_tools/en/" target="_blank" rel="noopener">https://re.jrc.ec.europa.eu/pvg_tools/en/</a></a>
+）</li>
+<li>极端气温：39.8 ℃（<a
+href="<a href="https://weather.news.sina.com.cn/news/2010/0729/57728.html"" target="_blank" rel="noopener">https://weather.news.sina.com.cn/news/2010/0729/57728.html"</a>><a href="https://weather.news.sina.com.cn/news/2010/0729/57728.html" target="_blank" rel="noopener">https://weather.news.sina.com.cn/news/2010/0729/57728.html</a></a>
+）；-21.7 ℃（<a
+href="<a href="https://m.thepaper.cn/newsDetail_forward_10881660"" target="_blank" rel="noopener">https://m.thepaper.cn/newsDetail_forward_10881660"</a>><a href="https://m.thepaper.cn/newsDetail_forward_10881660" target="_blank" rel="noopener">https://m.thepaper.cn/newsDetail_forward_10881660</a></a>
+）</li>
+<li>设备功率来源见执行版 §2.1 表（内联链接）</li>
+</ul>
+<h2 id="1-日用电量指导书-22">1 日用电量（指导书 §2.2）</h2>
+<p><strong>公式</strong>：E_i = P_i × t_i ×
+k_i（kWh/d，P:kW、t:h）；E_AC = Σ E_i <strong>计算</strong>：</p>
+<ul>
+<li>基础 3.41；采暖月 E_AC = 3.41 + 4.20 = <strong>7.61
+kWh/d</strong></li>
+<li>过渡 3.41+1.20 = 4.61；夏季 3.41+1.01 = 4.42；温和 3.41</li>
+</ul>
+<h2 id="2-最大同时功率指导书-23">2 最大同时功率（指导书 §2.3）</h2>
+<p><strong>公式</strong>：P_j = Σ(该时段同时运行 P_i)；P_max = max_j P_j
+<strong>计算</strong>：19:00-19:15 峰值 =
+1.2+0.15+1.5+0.86+0.20+0.072+0.12+0.12+0.006 = <strong>4.23 ≈ 4.2
+kW</strong>（周末 3.5 kW）</p>
+<h2 id="3-短时冲击功率指导书-24">3 短时冲击功率（指导书 §2.4）</h2>
+<p><strong>公式</strong>：P_short = P_start,k + 同时运行其他负荷
+<strong>计算</strong>：4.23 + 0.60（冰箱 5 倍×0.12）= <strong>4.83 ≈ 4.8
+kW</strong></p>
+<h2 id="4-峰值日照时数指导书-31">4 峰值日照时数（指导书 §3.1）</h2>
+<p><strong>公式</strong>：H = G_tilt / 1(kW/m²)，数值上 h/d = kWh/m²·d
+<strong>计算</strong>：水平 12 月 2.82；倾斜 35° 12 月 <strong>4.81
+h/d</strong>（Liu-Jordan，NASA 实测散射）</p>
+<h2 id="5-最不利设计月指导书-32">5 最不利设计月（指导书 §3.2）</h2>
+<p><strong>公式</strong>：R_m = E_AC,m / H_m <strong>计算</strong>：12
+月 R = 7.61/2.82 = <strong>2.70</strong>（全年最大）→ 最不利设计月 = 12
+月</p>
+<h2 id="6-组件温度指导书-33noct">6 组件温度（指导书 §3.3，NOCT）</h2>
+<p><strong>公式</strong>：T_cell = T_amb + (NOCT−20)/800 × G（NOCT=45
+℃、G=1000 W/m²） <strong>计算</strong>：极端 39.8 → 71.1 ℃；7 月常态
+20.7 → 51.9 ℃</p>
+<h2 id="7-综合路径效率指导书-42">7 综合路径效率（指导书 §4.2）</h2>
+<p><strong>公式</strong>：η_path = η_dc · η_MPPT · η_ch · η_dis · η_inv
+· η_ac <strong>计算</strong>：0.98×0.96×0.95×0.95×0.93×0.99 ≈
+<strong>0.782</strong></p>
+<h2 id="8-蓄电池最低标称能量指导书-52">8 蓄电池最低标称能量（指导书
+§5.2）</h2>
+<p><strong>公式</strong>：E_bat,min = E_AC·N_A·K_R /
+(DOD·η_dis·η_inv·K_T)
+<strong>系数来源（查得数据，非指导书示例）</strong>：N_A=2（任务书统一条件）；K_R=1.10（Benhoo
+BNP-5120BM 循环 6000+ 次、寿命期末容量保持率约 70% EOL →
+预留衰减余量）；DOD=0.90（厂家规格放电下限 44.8 V、智能 BMS
+允许深度循环）；η_dis=0.95（磷酸铁锂往返效率典型值）；η_inv=0.93（Growatt
+SPF 5000 ES 官方数据表峰值）；K_T=1.00（模块充电工作温度 0~50
+℃，设备间保温≥10 ℃ 无低温损失）。 <strong>计算</strong>：7.61×2×1.10 /
+(0.90×0.95×0.93×1.00) = 16.742/0.79515 ≈ <strong>21.04 kWh</strong></p>
+<h2 id="9-安时换算指导书-52">9 安时换算（指导书 §5.2）</h2>
+<p><strong>公式</strong>：C_bat,min = 1000 × E_bat,min / V_nom
+<strong>计算</strong>：1000×21.04/51.2 ≈ <strong>411 Ah</strong></p>
+<h2 id="10-模块能量与并联数指导书-53">10 模块能量与并联数（指导书
+§5.3）</h2>
+<p><strong>公式</strong>：E_mod = V·Ah/1000；N_P,E = ceil(E_bat,min /
+E_mod) <strong>计算</strong>：E_mod = 51.2×100/1000 = 5.12 kWh；N_P,E =
+ceil(21.04/5.12) = <strong>5 台</strong>；实际 25.60 kWh =
+<strong>1.22×</strong>（≤1.25）</p>
+<h2 id="11-充放电电流指导书-54">11 充放电电流（指导书 §5.4）</h2>
+<p><strong>公式</strong>：I_dis = P_inv,r/(V_bat,min·η_inv)；短时用
+P_short；I_chg = min(P_PV·η_MPPT/V_bat,chg, I_ctrl)；N_P = max(N_P,E,
+N_P,dis, N_P,chg) <strong>计算</strong>：</p>
+<ul>
+<li>I_dis = 5000/(45×0.93) = <strong>119.5 A</strong></li>
+<li>I_dis,sur = 4800/(45×0.93) = <strong>114.7 A</strong></li>
+<li>I_chg = min(2400×0.96/54.4, 80) = <strong>42.4 A</strong></li>
+<li>N_P,dis=2、N_P,chg=1 → N_P = max(5,2,1) = <strong>5</strong></li>
+</ul>
+<h2 id="12-敏感性指导书-55">12 敏感性（指导书 §5.5）</h2>
+<p><strong>公式</strong>：3 d ≈ 1.5 × 2 d 基准 <strong>计算</strong>：3
+d = 31.56 kWh → 7 台；DOD=0.80 → 23.67 kWh → 5 台；K_T=0.70 → 30.06 kWh
+→ 6 台</p>
+<h2 id="附录a-光伏阵列供-54-电流校核指导书-6">附录A 光伏阵列（供 §5.4
+电流校核，指导书 §6）</h2>
+<p><strong>公式</strong>：P_PV,min = E_AC·K_R/(H_tilt·η_path)；V_oc,cold
+= V_oc·(1+β_Voc·(T_min−25))；V_mp,hot =
+V_mp·(1+β_Vmp·(T_cell−25))；N_S,min=ceil(V_MPPT,min/V_mp,hot)；N_S,max=floor(V_ctrl,max/V_oc,cold)
+<strong>计算</strong>：</p>
+<ul>
+<li>P_PV,min = 7.61×1.10/(4.81×0.782) ≈ <strong>2.23 kWp</strong></li>
+<li>V_oc,cold = 52.22×(1+0.0023×46.7) ≈ 57.83 V；V_mp,hot ≈ 38.43
+V；V_mp,cold ≈ 49.89 V</li>
+<li>N_S,min=4、N_S,max=floor(500/57.83)=8 → 可行域 [4,8]；选
+N_S=4、N_P=1 → <strong>2.40 kWp</strong>，12 月供能比 =
+2.4×4.81×0.782/7.61 ≈ <strong>1.19</strong>（1 月 1.17）</li>
+<li>I_chg = min(2400×0.96/54.4, 80) = 42.4 A（回填 §5.4）</li>
+</ul>
+<hr />
+<p><em>本汇总覆盖指导书 §1~§5 全部公式及附录A（§5.4
+电流校核所需）。可复现脚本：docs/计算-兰州-D1-D5-真实数据.py。</em></p>
+
+<hr>
+<p class="meta">本页由《兰州-公式计算汇总.md》转换生成（2026-09-06）；配套文档：《兰州-D1-D5-按指导书执行版.docx》、计算书 PDF、可复现脚本 docs/计算-兰州-D1-D5-真实数据.py。</p>
+</body>
+</html>
