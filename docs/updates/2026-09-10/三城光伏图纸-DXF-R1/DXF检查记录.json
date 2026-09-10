@@ -1,0 +1,92 @@
+[
+  {
+    "city": "深圳",
+    "sheet": "T1-01",
+    "scale": 1,
+    "entities": 223,
+    "texts": 70,
+    "audit_errors": 0,
+    "audit_fixes": 0,
+    "sha256": "0b1129936adb9126891d5953dd43428ac4615dce89c3b34c24cbabde13ebd5e1"
+  },
+  {
+    "city": "深圳",
+    "sheet": "T1-02",
+    "scale": 75,
+    "entities": 131,
+    "texts": 44,
+    "audit_errors": 0,
+    "audit_fixes": 0,
+    "sha256": "7b5b0a40f57e7b135bf42d966e1d14072431d93f6e820395e9d2acd4db14af60"
+  },
+  {
+    "city": "深圳",
+    "sheet": "T1-03",
+    "scale": 25,
+    "entities": 140,
+    "texts": 46,
+    "audit_errors": 0,
+    "audit_fixes": 0,
+    "sha256": "8170187a0914b6e88b30914c60bd300a8e1b84db664b8c380776257145780b39"
+  },
+  {
+    "city": "拉萨",
+    "sheet": "T1-01",
+    "scale": 1,
+    "entities": 238,
+    "texts": 74,
+    "audit_errors": 0,
+    "audit_fixes": 0,
+    "sha256": "8fd7e7b2436ce2accf94dca99e38363da7752e52484186f7d160851cefb83e35"
+  },
+  {
+    "city": "拉萨",
+    "sheet": "T1-02",
+    "scale": 75,
+    "entities": 140,
+    "texts": 47,
+    "audit_errors": 0,
+    "audit_fixes": 0,
+    "sha256": "07235bd8e59829f1e229b5d025a0a47eaa33390cbeb34cdac835ccb95b4a7f8c"
+  },
+  {
+    "city": "拉萨",
+    "sheet": "T1-03",
+    "scale": 25,
+    "entities": 145,
+    "texts": 47,
+    "audit_errors": 0,
+    "audit_fixes": 0,
+    "sha256": "d00895eea0aa1903da9087ad321fc9d2cc77490df8234f8e9976549e2c4717e8"
+  },
+  {
+    "city": "哈尔滨",
+    "sheet": "T1-01",
+    "scale": 1,
+    "entities": 304,
+    "texts": 92,
+    "audit_errors": 0,
+    "audit_fixes": 0,
+    "sha256": "101dedb3f841a95711b178fd68677fce0c7fb48f3738c871e878f094a4476d0e"
+  },
+  {
+    "city": "哈尔滨",
+    "sheet": "T1-02",
+    "scale": 75,
+    "entities": 175,
+    "texts": 52,
+    "audit_errors": 0,
+    "audit_fixes": 0,
+    "sha256": "cd5b835cc569a525f1e7ec87d597f73804ea54daaec1e0a52198adc59eb9559e"
+  },
+  {
+    "city": "哈尔滨",
+    "sheet": "T1-03",
+    "scale": 25,
+    "entities": 159,
+    "texts": 48,
+    "audit_errors": 0,
+    "audit_fixes": 0,
+    "sha256": "3e8b91868ae8ec514b09eec932378c6c9878085d22f746f81590a9473e7af50e"
+  }
+]
